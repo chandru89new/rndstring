@@ -1,0 +1,72 @@
+@import 'c.sass/c.sass'
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono')
+
+*:root
+    --baseSize: 14px
+    --cols: 12
+    --gutter: var(--baseSize)
+    --scale: 1.25
+    --lineHeight: 1.7
+    --colorBase: hsla(120, 72%, 38%, 1)
+    --colorLight: hsla(120, 72%, 77%, 1)
+    --colorLightest: hsla(120, 72%, 97%, 1)
+    --colorDark: hsla(120, 72%, 28%, 1)
+    --colorDarkest: hsla(120, 72%, 5%, 1)
+    --colorHilite: hsla(278, 100%, 50%, 1)
+    --borderRadius: 4px
+    --borderSize: 1px
+    --fontFamily: 'Roboto Mono', monospace
+
+body 
+    font-family: var(--fontFamily)
+    font-size: var(--baseSize)
+    max-width: 600px
+    @extend .bg-l2
+    @extend .clr-d2
+
+a 
+    @extend .clr-b
+
+.btn
+    @extend .pl--1
+    @extend .pr--1
+    @extend .pt--2
+    @extend .pb--2
+    @extend .bg-b
+    @extend .clr-l2
+    @extend .brd
+    @extend .brdRound
+    @extend .brdClr-b
+    transition: all 0.2s ease-in-out
+    &:hover
+        background: var(--colorDark)
+        border-color: var(--colorDark)
+
+input 
+    @extend .pl--1
+    @extend .pr--1
+    @extend .pt--2
+    @extend .pb--2
+
+hr 
+    height: 1px 
+    @extend .brd-none
+    @extend .bg-d2
+    opacity: 0.1
+
+code
+    @extend .p--2
+    background: white
+    @extend .brdRound
+    @extend .fs--1
+
+img 
+    max-width: 100%
+
+ol 
+    list-style-type: decimal
+    @extend .ml-2
+
+li 
+    @extend .pt--2
+    @extend .pb--2
