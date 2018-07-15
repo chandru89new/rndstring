@@ -4,4 +4,8 @@ Generate random but mostly pronounceable strings. Useful for things like shortli
 
 [More info, demo and instructions on usage here.][0]
 
+### Licence
+
+No warranties whatsoever. Do whatever you want. Use freely.
+
 [0]: http://druchan.com/rndstring/demo/index.html
